@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "meme-collection",
+	"version": "${version}",
+	"name": "The Kid Of Gaming Meme Collection",
+	"description": "A collection of stupid additions",
+	"authors": [
+		"TheKidOfGaming"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/meme-collection/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"thekidofgaming.memecollection.TheKidOfGamingMemeCollectionClient"
+		],
+		"main": [
+			"thekidofgaming.memecollection.TheKidOfGamingMemeCollection"
+		],
+		"fabric-datagen": [
+			"thekidofgaming.memecollection.TheKidOfGamingMemeCollectionDataGenerator"
+		]
+	},
+	"mixins": [
+		"meme-collection.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
